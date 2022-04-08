@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_widget_description"
+    android:initialKeyguardLayout="@layout/r_d_r2_main_clock"
+    android:initialLayout="@layout/r_d_r2_main_clock"
+    android:minWidth="250dp"
+    android:minHeight="70dp"
+    android:previewImage="@drawable/mainclock"
+    android:resizeMode="vertical|horizontal"
+    android:previewLayout="@layout/r_d_r2_main_clock"
+    android:targetCellWidth="4"
+    android:targetCellHeight="1"
+    android:updatePeriodMillis="1920000"
+    android:widgetCategory="home_screen" />

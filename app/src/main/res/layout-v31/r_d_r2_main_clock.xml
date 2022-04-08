@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.GameWidget.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    android:background="#00FFFFFF"
+    android:theme="@style/Theme.GameWidget.AppWidgetContainer">
+
+    <ImageView
+        android:id="@+id/RDR2stylemainclock"
+        android:layout_width="374dp"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+
+        app:srcCompat="@drawable/mainclock" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/RDR2stylemainclock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:typeface="serif"
+        android:text="位置"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignBottom="@+id/RDR2stylemainclock"
+        android:layout_marginBottom="55dp"
+        android:alpha="0.7"
+        android:text="城市"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:id="@+id/layouta"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/RDR2stylemainclock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:orientation="horizontal">
+
+        <TextClock
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:format12Hour="hh:mm"
+            android:format24Hour="HH:mm"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tempxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="温度"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/RDR2stylemainclock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/RDR2stylemainclock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:alpha="0"
+
+        android:text="Button" />
+
+
+</RelativeLayout>
