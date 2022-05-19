@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.GameWidget.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:theme="@style/Theme.GameWidget.AppWidgetContainer">
+
+    <ImageView
+        android:id="@+id/widget_pocketclock"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:rotation="-13"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/pocketclockback" />
+
+    <ImageView
+        android:id="@+id/widget_hour"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:rotation="-13"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/hour" />
+
+    <ImageView
+        android:id="@+id/widget_minutes"
+        android:layout_width="150dp"
+        android:rotation="-13"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/minutes" />
+
+    <ImageView
+        android:id="@+id/clocktop"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/widget_pocketclock"
+        android:layout_alignEnd="@+id/widget_pocketclock"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-10dp"
+        android:rotation="-13"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/clocktop" />
+
+
+</RelativeLayout>

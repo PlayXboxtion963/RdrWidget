@@ -8,6 +8,7 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -55,7 +56,15 @@ public class MainActivity extends AppCompatActivity  {
 
             }
         });
-
+        Button intentbtn=findViewById(R.id.button3);
+        intentbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mintent=new Intent();
+                mintent.setClass(MainActivity.this,MainActivity2.class);
+                startActivity(mintent);
+            }
+        });
 
 
     }

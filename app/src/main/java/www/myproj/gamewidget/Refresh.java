@@ -82,6 +82,7 @@ public class Refresh extends AppCompatActivity {
                     views.setTextViewText(R.id.tempxx,"|"+mx.temp+"℃");
                     views.setTextViewText(R.id.textView3,mx.city);
                     views.setTextViewText(R.id.textView2,mx.location);
+
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S){
                         AssetManager mgr = getAssets();
                         Bitmap mbit=null;
